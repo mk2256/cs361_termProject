@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--<script src='main.js'></script>-->
+</head>
+<body>
+    <header>
+        <h2>Canvendar Assignment Helper</h2>
+    </header>
+
+    <div class="main-container">
+        <div class="main-section" id="introduction-section">
+            <h3>Overview</h3>
+            <p>Cavendar allows you to quickly get assignment due dates from your Canvas page and
+                allows you to quickly upload them to your Google Calendar instead of manually
+                creating each event by themselves!! This saves you time and makes
+                planning the beginning of the semester easy!
+            </p>
+            <h3>Quick Start</h3>
+            <p>
+            To begin using Canvendar, bring up the Assignments page on your desired class within Canvas. <br><br>
+            Then, click the "Write to Calendar" Button and your assignments will be written on your G-Calendar.<br><br>
+            
+            Otherwise, select the various options under "Additional Actions".
+            </p>
+        </div>
+
+        <div class="main-section" id="scrape-section">
+            <h3>Get Assignment Dates!</h3>
+            <p>Take all due dates and make into calendar events! As easy as 1-step click!</p>
+            <label for="eventTag"></label>
+            <input type="text" 
+            name="eventTag" 
+            id="eventTag" 
+            maxlength="255" 
+            required 
+            placeholder="Enter in a tag to describe the events" 
+            autofocus 
+        />
+
+
+            <a href="warnWrite.html"><button id="writeToCalendarButton">Write to Calendar</button></a>
+            <button id="advancedOptionButton">Advanced Options</button>
+        </div>
+
+        <div class="main-section" id="additional-actions-section">
+            <h3>Additional Actions</h3>
+            <p>Describes Software and features</p>
+            <a href="instructions.html"><button class="button" id="instructionsButton">Instructions</button></a>
+            <p>Store data for later or use in other apps. You will need to modify the data on your own after downloading. <b>(New!)</b></p>
+            <a href="warnDownload.html"><button id="downloadToCalendarButton">Download Data</button></a>
+            <p>Check if any due dates have changed.</p>
+            <button class="button" id="checkDatesButton">Check Due Dates</button>
+        </div>
+    </div>
+</body>
+</html>
